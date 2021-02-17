@@ -1,0 +1,17 @@
+apiVersion: v1
+name: pipelines
+home: https://jfrog.com/pipelines/
+version: 2.7.1
+appVersion: 1.11.3
+description: A Helm chart for JFrog Pipelines
+sources:
+- https://github.com/jfrog/charts/pipelines
+- https://bintray.com/jfrog/pipelines
+keywords:
+- pipelines
+- jfrog
+- devops
+maintainers:
+- name: Chart Maintainers at JFrog
+  email: installers@jfrog.com
+icon: https://raw.githubusercontent.com/jfrog/charts/master/stable/pipelines/icon/pipelines-logo.png
