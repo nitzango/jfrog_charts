@@ -1,0 +1,8 @@
+resources:
+- all.yaml
+patches:
+- path: ./patches/1613998219_remediate_SecurityContext_allowPrivilegeEscalation_for_workload_a0rpttkkxlscr-artifactory-primary.yaml
+  target:
+    kind: StatefulSet
+    name: a0rpttkkxlscr-artifactory-primary
+    namespace: a0rpttkkxlscr
