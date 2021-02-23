@@ -1,0 +1,23 @@
+kind: .
+metadata:
+  name: .
+spec:
+    template:
+      spec:
+        containers:
+        - name: artifactory-fluent-bit
+          securityContext:
+            allowPrivilegeEscalation: false
+        - name: jfrog-logs-collector
+          securityContext:
+            allowPrivilegeEscalation: false
+        initContainers:
+        - name: artifactory-init
+          securityContext:
+            allowPrivilegeEscalation: false
+        - name: copy-system-yaml
+          securityContext:
+            allowPrivilegeEscalation: false
+        - name: jfrog-saas-dependencies
+          securityContext:
+            allowPrivilegeEscalation: false
