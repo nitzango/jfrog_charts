@@ -1,0 +1,7 @@
+resources:
+- all.yaml
+patches:
+- path: ./patches/1622123486_remediate_SecurityContext_runAsNonRoot_for_workload_RELEASE-NAME-pipelines-services.yaml
+  target:
+    kind: StatefulSet
+    name: '*-pipelines-services'
