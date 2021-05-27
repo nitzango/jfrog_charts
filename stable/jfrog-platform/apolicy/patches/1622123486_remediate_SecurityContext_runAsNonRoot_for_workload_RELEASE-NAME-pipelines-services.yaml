@@ -1,0 +1,56 @@
+kind: .
+metadata:
+  name: .
+spec:
+    template:
+      spec:
+        containers:
+        - name: api
+          securityContext:
+            runAsNonRoot: true
+        - name: cron
+          securityContext:
+            runAsNonRoot: true
+        - name: extensionsync
+          securityContext:
+            runAsNonRoot: true
+        - name: hookhandler
+          securityContext:
+            runAsNonRoot: true
+        - name: logup
+          securityContext:
+            runAsNonRoot: true
+        - name: marshaller
+          securityContext:
+            runAsNonRoot: true
+        - name: nexec
+          securityContext:
+            runAsNonRoot: true
+        - name: pipelinesync
+          securityContext:
+            runAsNonRoot: true
+        - name: router
+          securityContext:
+            runAsNonRoot: true
+        - name: runtrigger
+          securityContext:
+            runAsNonRoot: true
+        - name: steptrigger
+          securityContext:
+            runAsNonRoot: true
+        - name: templatesync
+          securityContext:
+            runAsNonRoot: true
+        - name: www
+          securityContext:
+            runAsNonRoot: true
+        initContainers:
+        - name: copy-system-yaml
+          securityContext:
+            runAsNonRoot: true
+        - name: pipelines-installer
+          securityContext:
+            runAsNonRoot: true
+        - name: wait-for-vault
+          securityContext:
+            runAsNonRoot: true
